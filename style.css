@@ -126,3 +126,18 @@ button:hover {
 .project-card a:hover {
     background: #244bb8;
 }
+
+.project-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.project-card .secondary-link {
+    background: transparent;
+    border: 1px solid #4468f0;
+}
+
+.project-card .secondary-link:hover {
+    background: #24336b;
+}
