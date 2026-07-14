@@ -141,3 +141,55 @@ button:hover {
 .project-card .secondary-link:hover {
     background: #24336b;
 }
+
+.project-card-featured {
+    max-width: 760px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.project-image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 8;
+    object-fit: cover;
+    object-position: center;
+}
+
+.project-content {
+    padding: 30px;
+}
+
+.project-label {
+    display: inline-block;
+    margin-bottom: 14px;
+    padding: 7px 11px;
+    color: #111;
+    background: #e7b7ae;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+    body {
+        margin-top: 60px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .project-content {
+        padding: 22px;
+    }
+
+    .project-image {
+        aspect-ratio: 4 / 3;
+    }
+}
