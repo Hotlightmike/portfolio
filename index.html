@@ -1,95 +1,225 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мое портфолио</title>
-
+    <meta name="description" content="Mykhailo Khotenkov creates modern, responsive landing pages for local businesses and personal brands.">
+    <meta name="theme-color" content="#0b0d10">
+    <title>Mykhailo Khotenkov | Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header class="site-header">
+        <a class="brand" href="#top" aria-label="Back to top">
+            <span>MK</span>
+            <strong>Mykhailo<br>Khotenkov</strong>
+        </a>
 
-    <div class="container">
+        <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false">
+            <span></span><span></span>
+        </button>
 
-        <h1>👋 Привет, я Mykhailo</h1>
+        <nav class="navigation" aria-label="Main navigation">
+            <a href="#work">Work</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
-        <h2>Будущий Full Stack Developer</h2>
+        <a class="header-cta" href="https://www.fiverr.com/mike_khotenkov" target="_blank" rel="noopener noreferrer">Hire me <span>↗</span></a>
+    </header>
 
-        <p id="text">
-            Я изучаю веб-разработку и каждый день становлюсь лучше.
-        </p>
-
-        <button id="about">Обо мне</button>
-        <button id="projects">Мои проекты</button>
-        <button id="contact">Связаться</button>
-
-        <div class="card">
-            <h3>Обо мне</h3>
-            <p>
-                Мне 19 лет. Я живу в Австрии и изучаю веб-разработку.
-                Моя цель — стать Full Stack Developer.
-            </p>
-        </div>
-
-        <h2>🛠 Мои навыки</h2>
-
-        <div class="skills">
-            <div class="skill">HTML</div>
-            <div class="skill">CSS</div>
-            <div class="skill">JavaScript</div>
-        </div>
-
-        <section id="projects-section">
-            <h2>Мои проекты</h2>
-
-            <article class="project-card">
-                <h3>Сайт-портфолио</h3>
-                <p>
-                    Мой первый адаптивный сайт, созданный с помощью HTML, CSS и JavaScript.
-                </p>
-                <a href="https://github.com/Hotlightmike/portfolio" target="_blank" rel="noopener noreferrer">
-                    Посмотреть код на GitHub
-                </a>
-            </article>
-
-            <article class="project-card">
-                <h3>Iron & Oak Barbershop</h3>
-                <p>
-                    Современный адаптивный лендинг для барбершопа в Вене с услугами, ценами и формой записи.
-                </p>
-                <div class="project-actions">
-                    <a href="https://hotlightmike.github.io/barbershop-landing/" target="_blank" rel="noopener noreferrer">
-                        Открыть сайт
-                    </a>
-                    <a class="secondary-link" href="https://github.com/Hotlightmike/barbershop-landing" target="_blank" rel="noopener noreferrer">
-                        Код на GitHub
-                    </a>
+    <main id="top">
+        <section class="hero section-shell">
+            <div class="hero-copy reveal">
+                <p class="eyebrow"><span></span> Available for freelance projects</p>
+                <h1>Websites that make small businesses <em>stand out.</em></h1>
+                <p class="hero-intro">I create modern, fast, and mobile-friendly landing pages that help local businesses look professional and turn visitors into clients.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#work">View my work</a>
+                    <a class="button button-ghost" href="#contact">Start a project <span>↗</span></a>
                 </div>
-            </article>
+            </div>
 
-            <article class="project-card project-card-featured">
-                <img class="project-image" src="assets/beauty-salon-preview.png" alt="Главная страница сайта Élan Atelier">
-                <div class="project-content">
-                    <span class="project-label">Новый проект</span>
-                    <h3>Élan Atelier Beauty Salon</h3>
-                    <p>
-                        Современный адаптивный лендинг для салона красоты в Вене с услугами, ценами, отзывами и формой записи.
-                    </p>
-                    <div class="project-actions">
-                        <a href="https://hotlightmike.github.io/beauty-salon-landing/" target="_blank" rel="noopener noreferrer">
-                            Открыть сайт
-                        </a>
-                        <a class="secondary-link" href="https://github.com/Hotlightmike/beauty-salon-landing" target="_blank" rel="noopener noreferrer">
-                            Код на GitHub
-                        </a>
+            <aside class="hero-panel reveal">
+                <div class="availability-card">
+                    <span class="status-dot"></span>
+                    <div>
+                        <small>Based in</small>
+                        <strong>Austria · CET</strong>
                     </div>
                 </div>
-            </article>
+                <div class="hero-metric">
+                    <strong>02</strong>
+                    <span>Live business<br>websites</span>
+                </div>
+                <div class="hero-metric">
+                    <strong>100%</strong>
+                    <span>Responsive<br>on every device</span>
+                </div>
+                <div class="code-card" aria-hidden="true">
+                    <div><i></i><i></i><i></i></div>
+                    <pre><span>const</span> website = {
+  design: <b>"modern"</b>,
+  mobile: <b>true</b>,
+  fast: <b>true</b>
+};</pre>
+                </div>
+            </aside>
         </section>
 
-    </div>
+        <div class="skill-strip" aria-label="Technologies and strengths">
+            <div>
+                <span>HTML</span><i>✦</i><span>CSS</span><i>✦</i><span>JavaScript</span><i>✦</i><span>Responsive Design</span><i>✦</i><span>GitHub</span><i>✦</i><span>AI-assisted workflow</span>
+            </div>
+        </div>
+
+        <section class="work section-shell" id="work">
+            <div class="section-heading reveal">
+                <div>
+                    <p class="eyebrow">Selected work</p>
+                    <h2>Built for real businesses.</h2>
+                </div>
+                <p>Focused landing pages with clear structure, strong calls to action, and a polished experience on desktop and mobile.</p>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project project-dark reveal">
+                    <a class="project-image" href="https://hotlightmike.github.io/barbershop-landing/" target="_blank" rel="noopener noreferrer" aria-label="Open Iron and Oak Barbershop website">
+                        <img src="assets/barbershop-preview.jpg" alt="Iron and Oak barbershop website preview">
+                        <span>View live site ↗</span>
+                    </a>
+                    <div class="project-body">
+                        <div class="project-number">01</div>
+                        <div>
+                            <p class="project-type">Local business · Landing page</p>
+                            <h3>Iron & Oak Barbershop</h3>
+                            <p>A bold, conversion-focused website for a Vienna barbershop with services, pricing, reviews, and a booking request form.</p>
+                            <ul>
+                                <li>Responsive design</li>
+                                <li>Interactive booking form</li>
+                                <li>Mobile navigation</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://hotlightmike.github.io/barbershop-landing/" target="_blank" rel="noopener noreferrer">Live website ↗</a>
+                                <a href="https://github.com/Hotlightmike/barbershop-landing" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project project-light reveal">
+                    <a class="project-image" href="https://hotlightmike.github.io/beauty-salon-landing/" target="_blank" rel="noopener noreferrer" aria-label="Open Élan Atelier website">
+                        <img src="assets/beauty-salon-preview.png" alt="Élan Atelier beauty salon website preview">
+                        <span>View live site ↗</span>
+                    </a>
+                    <div class="project-body">
+                        <div class="project-number">02</div>
+                        <div>
+                            <p class="project-type">Beauty industry · Landing page</p>
+                            <h3>Élan Atelier</h3>
+                            <p>An elegant beauty salon website with a premium visual direction, service pricing, social proof, and a contact form.</p>
+                            <ul>
+                                <li>Custom visual concept</li>
+                                <li>Scroll animations</li>
+                                <li>Responsive booking form</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://hotlightmike.github.io/beauty-salon-landing/" target="_blank" rel="noopener noreferrer">Live website ↗</a>
+                                <a href="https://github.com/Hotlightmike/beauty-salon-landing" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="services section-shell" id="services">
+            <div class="section-heading reveal">
+                <div>
+                    <p class="eyebrow">What I do</p>
+                    <h2>Everything needed for a strong first impression.</h2>
+                </div>
+            </div>
+
+            <div class="services-list">
+                <article class="service reveal">
+                    <span>01</span>
+                    <div>
+                        <h3>Landing page design</h3>
+                        <p>A complete one-page website built around your business, services, and ideal clients.</p>
+                    </div>
+                    <strong>Design + Code</strong>
+                </article>
+                <article class="service reveal">
+                    <span>02</span>
+                    <div>
+                        <h3>Responsive development</h3>
+                        <p>Clean HTML, CSS, and JavaScript that works smoothly across phones, tablets, and desktops.</p>
+                    </div>
+                    <strong>Mobile first</strong>
+                </article>
+                <article class="service reveal">
+                    <span>03</span>
+                    <div>
+                        <h3>Website launch</h3>
+                        <p>Setup on GitHub Pages or your hosting so the finished website is ready to share with clients.</p>
+                    </div>
+                    <strong>Go live</strong>
+                </article>
+            </div>
+        </section>
+
+        <section class="about section-shell" id="about">
+            <div class="about-card reveal">
+                <p class="eyebrow">About me</p>
+                <h2>I build with curiosity, care, and a practical mindset.</h2>
+                <div class="about-grid">
+                    <p>I'm Mykhailo, a 19-year-old web developer based in Austria. I create focused websites for small businesses and personal brands using HTML, CSS, JavaScript, Git, and modern AI-assisted tools.</p>
+                    <p>My goal is simple: understand what a business needs, turn it into a clear website, and deliver something that looks professional and is easy to use.</p>
+                </div>
+                <div class="tool-list">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                    <span>Git</span>
+                    <span>GitHub</span>
+                    <span>Responsive UI</span>
+                </div>
+            </div>
+
+            <div class="process reveal">
+                <p class="eyebrow">Simple process</p>
+                <ol>
+                    <li><span>01</span><div><strong>Brief</strong><p>You share your business, content, style, and goals.</p></div></li>
+                    <li><span>02</span><div><strong>Build</strong><p>I design and develop the responsive landing page.</p></div></li>
+                    <li><span>03</span><div><strong>Launch</strong><p>We review, improve, and publish the final website.</p></div></li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="contact section-shell" id="contact">
+            <div class="contact-card reveal">
+                <p class="eyebrow">Have a project in mind?</p>
+                <h2>Let's build a website your business can be proud of.</h2>
+                <p>Tell me about your business and what you need. I’ll reply with the best next step.</p>
+                <div class="contact-actions">
+                    <a class="button button-light" href="https://www.fiverr.com/mike_khotenkov" target="_blank" rel="noopener noreferrer">Hire me on Fiverr ↗</a>
+                    <a class="email-link" href="mailto:hotlightmike@gmail.com">hotlightmike@gmail.com</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer section-shell">
+        <a class="brand" href="#top"><span>MK</span><strong>Mykhailo<br>Khotenkov</strong></a>
+        <p>Modern websites for local businesses.</p>
+        <p>© <span id="year"></span> Mykhailo Khotenkov</p>
+    </footer>
 
     <script src="script.js"></script>
-
 </body>
 </html>
